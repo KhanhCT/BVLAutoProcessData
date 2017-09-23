@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@10.33.7.73:1521:D1</property>
+		<property name="hibernate.connection.username">ebanktest</property>
+		<property name="hibernate.connection.password">ebanktest</property>
+
+		<!-- <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property> 
+			<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property> 
+			<property name="hibernate.connection.url">jdbc:oracle:thin:localhost:1521:orcl</property> 
+			<property name="hibernate.connection.username">C##CommonDB</property> <property 
+			name="hibernate.connection.password">admin</property> -->
+		<!--  <property name="hibernate.show_sql">true</property>-->
+		<mapping class="vn.com.daisy.DAO.BvlBill" />
+		<mapping class="vn.com.daisy.DAO.BvlBillId" />
+		<mapping class="vn.com.daisy.DAO.Syslogs" />
+		<mapping class="vn.com.daisy.DAO.SyslogsId" />
+		<mapping class="vn.com.daisy.DAO.Sysvar" />
+		<mapping class="vn.com.daisy.DAO.BvlCompanyId" />
+		<mapping class="vn.com.daisy.DAO.BvlCompany" />
+		<mapping class="vn.com.daisy.DAO.BvlOutlet" />
+		<mapping class="vn.com.daisy.DAO.BvlCollateInfo" />
+		<mapping class="vn.com.daisy.DAO.BvlCollateInfoId" />
+	</session-factory>
+</hibernate-configuration>
+
+
